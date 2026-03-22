@@ -74,8 +74,8 @@ The orchestrator's artifact generators pull from multiple skills:
 | Investor One-Pager | 01 (problem), 02 (model), 08 (traction), 09 (team), 03 (ask) |
 | Executive Summary | All skills (distilled) |
 | Company & Product | 01 (validation), 05 (PRD/features) |
-| Market Analysis | 01 (market signals) + WebSearch research |
-| Competitive Analysis | 02 (positioning) + WebSearch research |
+| Market Analysis | 01 (market signals) + web search research |
+| Competitive Analysis | 02 (positioning) + web search research |
 | GTM Playbook | 04 (launch plan), 06 (sales), 07 (marketing) |
 | Marketing & Sales Strategy | 06 (sales method), 07 (brand/content) |
 | Operations Plan | 09 (org, OKRs, hires) |
@@ -92,11 +92,11 @@ The orchestrator's artifact generators pull from multiple skills:
 | 1. Title | Intake (company name, tagline) |
 | 2. Problem | 01 (validated pain, evidence) |
 | 3. Solution | 05 (product, features) |
-| 4. Market | 01 (market size) + WebSearch |
+| 4. Market | 01 (market size) + web search |
 | 5. Business Model | 02 (revenue model, pricing) |
 | 6. Traction | 08 (metrics, milestones) |
 | 7. Team | 09 (org, founder-market fit from 01) |
-| 8. Competition | 02 (positioning map) + WebSearch |
+| 8. Competition | 02 (positioning map) + web search |
 | 9. Financials | 10 (projections, unit economics from 02) |
 | 10. Ask | 03 (amount, use of funds, milestones) |
 

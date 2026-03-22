@@ -15,7 +15,7 @@ generated_by: Orchestrator (Skills 01-12)
 startup: [startup name from intake]
 date: [YYYY-MM-DD generation date]
 version: 1.0
-research_sources: [list of URLs from WebSearch research]
+research_sources: [list of URLs from web search research]
 ---
 ```
 
@@ -40,7 +40,7 @@ Single-page executive snapshot for investors who will decide in 60 seconds wheth
 | Company name, tagline | Intake questionnaire |
 | Problem statement | Skill 01 (Idea Validation) — validated problem in customer language |
 | Solution summary | Skill 05 (Product) — core product description |
-| Market size | Skill 01 (market signals) + WebSearch research |
+| Market size | Skill 01 (market signals) + web search research |
 | Traction metrics | Skill 08 (Growth & Analytics) — North Star metric, ARR, growth rate |
 | Business model | Skill 02 (Business Model) — revenue model type, key unit economics |
 | Team summary | Skill 09 (Operations) — founder bios, key team members |
@@ -54,7 +54,7 @@ PROBLEM: [2-3 sentences from Skill 01 validated problem statement. Use customer 
 
 SOLUTION: [2-3 sentences from Skill 05 product description. What it does, not how it works. Focus on the outcome for the customer.]
 
-MARKET: [TAM/SAM/SOM from WebSearch research with citation. Bottom-up calculation, not top-down estimate. "We target [SAM segment] within the $[TAM]B [industry] market."]
+MARKET: [TAM/SAM/SOM from web search research with citation. Bottom-up calculation, not top-down estimate. "We target [SAM segment] within the $[TAM]B [industry] market."]
 
 TRACTION: [Key metrics from Skill 08. Format: "$[X]K MRR, [Y]% MoM growth, [Z] paying customers, [W]% monthly retention." If pre-revenue: "[N] pilot customers, [M] waitlist signups, [K] LOIs signed."]
 
@@ -89,7 +89,7 @@ All 12 skills (distilled). Every completed skill contributes one key insight.
 
 [Company paragraph: What [Company Name] does and how. 3-4 sentences from Skill 05 product description + Skill 02 business model. Include the positioning statement from Skill 02: "For [customer] who [situation], [Company] is the [category] that [unique value]."]
 
-[Market paragraph: Size and growth. 2-3 sentences from WebSearch research. TAM/SAM/SOM with bottom-up math. Growth drivers that make the market attractive.]
+[Market paragraph: Size and growth. 2-3 sentences from web search research. TAM/SAM/SOM with bottom-up math. Growth drivers that make the market attractive.]
 
 [Traction paragraph: What you have achieved so far. 2-3 sentences from Skill 08 growth metrics. Key milestones, customer count, revenue, retention. If pre-revenue, describe validation evidence from Skill 01.]
 
@@ -181,9 +181,9 @@ Data-driven market sizing and trend analysis. This section REQUIRES internet res
 |-----------|--------|
 | Initial market signals | Skill 01 (Idea Validation) — search volume, complaint data |
 | Market positioning | Skill 02 (Business Model) — target segment definition |
-| Validated market data | WebSearch research (required) |
+| Validated market data | web search research (required) |
 
-### Required WebSearch Queries
+### Required web search Queries
 Run these queries and incorporate findings:
 ```
 "[industry] market size [current_year]"
@@ -201,7 +201,7 @@ Run these queries and incorporate findings:
 ## Part IV: Market Analysis
 
 ### Total Addressable Market (TAM)
-[From WebSearch: The total revenue opportunity if the product achieved 100% market share.
+[From web search: The total revenue opportunity if the product achieved 100% market share.
 - Top-down estimate with citation: "According to [Source] ([URL], accessed [date]), the global [industry] market was valued at $[X]B in [year] and is projected to reach $[Y]B by [year], growing at [Z]% CAGR."
 - Bottom-up validation: "[N target customers] x [$annual contract value] = $[TAM]. Based on [source for customer count]."
 - If top-down and bottom-up disagree by >50%, note the discrepancy and explain.]
@@ -218,7 +218,7 @@ Run these queries and incorporate findings:
 - Benchmark penetration rate against comparable companies at a similar stage]
 
 ### Market Trends
-[From WebSearch: 3-5 trends driving market growth.
+[From web search: 3-5 trends driving market growth.
 For each trend:
 - Trend name and description
 - Evidence (data point with citation)
@@ -255,9 +255,9 @@ Honest assessment of the competitive landscape. Saying "we have no competitors" 
 | Competitive alternatives map | Skill 02 (Business Model) — April Dunford positioning |
 | Unique capabilities | Skill 02 — structural differentiators |
 | Positioning statement | Skill 02 — "For [customer] who [situation]..." |
-| Competitor details | WebSearch research (required) |
+| Competitor details | web search research (required) |
 
-### Required WebSearch Queries
+### Required web search Queries
 ```
 "[competitor_name] funding round [current_year]"
 "[competitor_name] revenue"
@@ -580,7 +580,7 @@ Revenue model, cost structure, unit economics, 3-year projections, and scenario 
 | Headcount plan costs | Skill 09 (Operations) |
 | Funding amount and terms | Skill 03 (Fundraising) |
 
-### Required WebSearch Queries
+### Required web search Queries
 ```
 "[industry] gross margin benchmark"
 "[industry] SaaS metrics benchmark [current_year]"
@@ -660,7 +660,7 @@ For each scenario: explain what would need to be true and what the response plan
 ```
 
 ### Research Integration
-- Compare unit economics to industry benchmarks from WebSearch
+- Compare unit economics to industry benchmarks from web search
 - Note where the startup's metrics are above or below benchmark and explain why
 - All benchmark citations must include source, URL, and date
 
@@ -756,7 +756,7 @@ Entity structure, intellectual property, regulatory requirements, and risk manag
 | IP status | Skill 12 — assignments, filings |
 | SAFE/investment terms | Skill 03 (Fundraising) |
 
-### Required WebSearch Queries (for regulated industries)
+### Required web search Queries (for regulated industries)
 ```
 "[industry] regulations [jurisdiction] [current_year]"
 "[industry] compliance requirements"
@@ -792,7 +792,7 @@ Entity structure, intellectual property, regulatory requirements, and risk manag
 - Trade secrets: documented / protected by NDA]
 
 ### Regulatory Compliance
-[From Skill 12 + WebSearch:
+[From Skill 12 + web search:
 - Applicable regulations by jurisdiction
 - Current compliance status
 - Required licenses or certifications
@@ -834,7 +834,7 @@ All 12 skills contribute risks from their respective domains.
 ## Part XIII: Risk Analysis
 
 ### Market Risks
-[From Skills 01, 02 + WebSearch:
+[From Skills 01, 02 + web search:
 | Risk | Likelihood | Impact | Mitigation |
 |------|-----------|--------|-----------|
 | Market smaller than projected | [H/M/L] | [H/M/L] | [specific action] |
@@ -856,7 +856,7 @@ All 12 skills contribute risks from their respective domains.
 | Unit economics don't improve at scale | [H/M/L] | [H/M/L] | [specific action] |]
 
 ### Competitive Risks
-[From Skill 02 + WebSearch:
+[From Skill 02 + web search:
 | Risk | Likelihood | Impact | Mitigation |
 | Well-funded competitor launches similar product | [H/M/L] | [H/M/L] | [specific action] |
 | Incumbent adds competing feature | [H/M/L] | [H/M/L] | [specific action] |
@@ -907,7 +907,7 @@ Supporting data that is too detailed for the main document but valuable for due 
 [From Skill 05: product visuals if available.]
 
 ### Appendix E: Research Sources
-[Complete list of all WebSearch sources used:
+[Complete list of all web search sources used:
 | Source | URL | Date Accessed | Data Used |
 All sources cited in Parts IV, V, X, XII.]
 

@@ -70,7 +70,7 @@
 **How many of these customers exist?**
 [Estimate: hundreds, thousands, hundreds of thousands? How do you know?]
 
-*Routing: Feeds market sizing. If founder is guessing, WebSearch research will be needed for Business Plan Part IV.*
+*Routing: Feeds market sizing. If founder is guessing, web search research will be needed for Business Plan Part IV.*
 
 ---
 
@@ -244,7 +244,7 @@ $[placeholder]
 **Specific sub-sector (if applicable):**
 [e.g., "B2B payments infrastructure" within fintech, or "employee wellness" within healthtech]
 
-*Routing: Feeds WebSearch queries for market sizing and competitive analysis.*
+*Routing: Feeds web search queries for market sizing and competitive analysis.*
 
 ### 5.2 Market
 
@@ -264,7 +264,7 @@ $[placeholder]
 | [placeholder] | [placeholder] | [placeholder] |
 | [placeholder] | [placeholder] | [placeholder] |
 
-*Routing: Feeds Skill 02 (Business Model) competitive positioning, Business Plan Part V, and Pitch Deck Slide 8. WebSearch will supplement with funding, pricing, and review data.*
+*Routing: Feeds Skill 02 (Business Model) competitive positioning, Business Plan Part V, and Pitch Deck Slide 8. Web search will supplement with funding, pricing, and review data.*
 
 **Is this industry regulated?**
 - [ ] No significant regulation
@@ -343,7 +343,7 @@ $[placeholder]
 *Routing: Summary → faster runs, less research. Comprehensive → full research protocol, detailed artifacts.*
 
 **Should the Business Plan include internet research for market/competitive data?**
-- [ ] Yes — use WebSearch for current market data and competitor analysis
+- [ ] Yes — use web search for current market data and competitor analysis
 - [ ] No — use only the information I provide
 - [ ] Yes, but only for specific sections: [placeholder]
 
