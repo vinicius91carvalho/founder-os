@@ -17,3 +17,6 @@ jobs:
 
       - name: Run validation tests
         run: bash tests/validate-skills.sh
+
+      - name: Run auto-version tests
+        run: bash tests/test-auto-version.sh
