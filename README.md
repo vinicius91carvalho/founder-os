@@ -18,26 +18,13 @@ No code. No dependencies. Just 75 markdown files encoding 22,000+ lines of struc
 
 ## Platform Compatibility
 
-FounderOS is a **pure-knowledge system** — 75 markdown files with zero code dependencies. It works with any AI coding assistant or chat platform that can read markdown files and follow structured prompts.
+FounderOS is a **pure-knowledge system** — 75 markdown files with zero code dependencies. It works with any AI assistant that can read markdown files and follow structured prompts.
 
-### Fully Compatible
+### Web Research
 
-| Platform | How to Use | Notes |
-|---|---|---|
-| **Claude** (Code, Projects, API) | Load `skills/` directory as project knowledge or custom instructions | Native skill loading, full support |
-| **Cursor** | Add `skills/` to project context via `.cursorrules` or `@docs` | Reference skill files in chat |
-| **Windsurf** | Add `skills/` to project knowledge via Cascade rules | Reference skill files in chat |
-| **GitHub Copilot** | Reference skill files in chat with `#file` | Works in VS Code and JetBrains |
-| **Gemini** (AI Studio, Vertex) | Upload skill files as context or system instructions | Supports web search for market research |
-| **OpenAI / ChatGPT** | Upload skill files or paste into custom instructions | GPT-4+ recommended for full framework depth |
-| **Codex** (OpenAI) | Include skill files in repository context | Autonomous mode works well with orchestrator |
-| **Any LLM with file access** | Point it at the `skills/` directory | Works with any model that follows structured prompts |
+Some skills use web search for live market data (market sizing, competitor analysis, industry benchmarks). This works on most platforms:
 
-### Web Research Capability
-
-Some skills reference `WebSearch` and `WebFetch` for live market research (market sizing, competitor analysis, industry benchmarks). This is a **generic capability name**, not a platform-specific API:
-
-| Platform | Web Research Support |
+| Platform | Web Research |
 |---|---|
 | Claude (with MCP tools) | `WebSearch` / `WebFetch` via MCP servers |
 | Gemini | Built-in Google Search grounding |
@@ -46,18 +33,18 @@ Some skills reference `WebSearch` and `WebFetch` for live market research (marke
 | Codex | Built-in web search |
 | Perplexity | Native web search |
 
-**Without web access:** All 12 skills work fully — diagnostics, frameworks, templates, and structured outputs. Only the Business Plan and Pitch Deck artifact generators lose live market data (TAM/SAM/SOM, competitor funding, industry benchmarks). You can manually provide this data instead.
+**Without web access:** All 12 skills work fully. Only the Business Plan and Pitch Deck lose live market data (TAM/SAM/SOM, competitor funding, benchmarks). You can provide this data manually instead.
 
-### Claude-Specific Features
+### Claude-Only Features
 
-While FounderOS works everywhere, these features are **only available on Claude**:
+These features work **only on Claude** — on other platforms, you get the same results by manually referencing skill files:
 
-- **Claude Code skills system**: Auto-routing via `/skill` commands and skill frontmatter
-- **MCP tool integration**: Structured `WebSearch`/`WebFetch` calls with typed responses
-- **Project knowledge**: Native loading of entire `skills/` directory as persistent context
-- **Orchestrator auto-chaining**: The orchestrator can automatically invoke skills in sequence using Claude's tool-use architecture
-
-On other platforms, you achieve the same results by manually referencing the relevant skill file (e.g., "Follow the process in `skills/01-idea-validation/SKILL.md`").
+| Feature | What It Does | Without Claude |
+|---|---|---|
+| **Skills system** | Auto-routing via `/skill` commands | Reference `skills/00-orchestrator/SKILL.md` to start |
+| **MCP tool integration** | Structured web search with typed responses | Use platform's native web search |
+| **Project knowledge** | Native loading of `skills/` as persistent context | Upload/reference skill files manually |
+| **Auto-chaining** | Orchestrator invokes skills in sequence automatically | Follow the orchestrator's routing instructions manually |
 
 ---
 
@@ -208,7 +195,7 @@ CLAUDE  Clear picture. Here's what I'm going to run:
         which match the "Ask" slide in the pitch deck.
 ```
 
-> **Note:** This example shows Claude, but the same interaction flow works on any AI platform. Simply reference the orchestrator skill file and follow its diagnostic process.
+> **Note:** This example shows Claude, but the same flow works on any AI platform. Start with "Follow the process in `skills/00-orchestrator/SKILL.md`" and describe your startup.
 
 ---
 
@@ -352,62 +339,51 @@ Each skill follows the same structure: **diagnose state** → **select workflow*
 
 ---
 
-## Quick Start
+## Getting Started
 
-### Using with Claude
+**Just ask anything.** The orchestrator will figure out where you are and guide you through the right skills.
 
-Load the `skills/` directory into your Claude project or Claude Code session. Then just talk naturally:
+There's no setup, no configuration, no commands to memorize. Describe your startup situation in plain language — the system diagnoses your stage, selects the relevant skills, and walks you through battle-tested frameworks step by step.
+
+### Setup by Platform
+
+| Platform | Setup | Then... |
+|---|---|---|
+| **Claude Code** | Clone this repo and open it as your working directory | Just start talking |
+| **Claude Projects** | Upload the `skills/` folder as project knowledge | Just start talking |
+| **Cursor** | Clone the repo; add `skills/` to project context via `.cursorrules` or `@docs` | Reference `skills/00-orchestrator/SKILL.md` to begin |
+| **Windsurf** | Clone the repo; add `skills/` to Cascade rules | Reference `skills/00-orchestrator/SKILL.md` to begin |
+| **GitHub Copilot** | Clone the repo; reference skill files with `#file` in chat | Reference `skills/00-orchestrator/SKILL.md` to begin |
+| **Gemini** (AI Studio / Vertex) | Upload skill files as context or system instructions | Reference `skills/00-orchestrator/SKILL.md` to begin |
+| **ChatGPT** | Upload skill files or paste into custom instructions | Reference `skills/00-orchestrator/SKILL.md` to begin |
+| **Codex** (OpenAI) | Include skill files in repository context | Reference `skills/00-orchestrator/SKILL.md` to begin |
+| **Any other LLM** | Point it at the `skills/` directory | Reference `skills/00-orchestrator/SKILL.md` to begin |
+
+> **Tip for non-Claude platforms:** Start your conversation with "Follow the process in `skills/00-orchestrator/SKILL.md`" and the AI will pick up the orchestrator's diagnostic flow. Or go directly to any skill: "Follow `skills/01-idea-validation/SKILL.md` to validate my idea."
+
+### Example Prompts
+
+You don't need to know which skill to use. Just describe what you need:
 
 ```
 "I have a startup idea and need a complete business plan."
-```
-
-### Using with Other AI Platforms
-
-Reference the specific skill file you need:
-
-```
-"Follow the process in skills/00-orchestrator/SKILL.md — I have a startup idea
-and need a complete business plan."
-```
-
-Or go directly to a single skill:
-
-```
-"Follow skills/01-idea-validation/SKILL.md to help me validate my startup idea."
-```
-
-### Common Prompts
-
-**Full Business Plan** — the orchestrator runs all 12 skills:
-```
-"I have a startup idea and need a complete business plan."
-```
-
-**Single skill** — go directly to what you need:
-```
-"Help me validate my startup idea."            → Skill 01
-"I need to figure out my pricing."             → Skill 02
-"Prepare me for fundraising."                  → Skill 03
-"Plan my product launch."                      → Skill 04
-"Write a PRD for my product."                  → Skill 05
-"Help me build a sales process."               → Skill 06
-"Define my brand voice."                       → Skill 07
-"Set up my growth metrics."                    → Skill 08
-"Help me structure my team and OKRs."          → Skill 09
-"I need to understand my burn rate and runway." → Skill 10
-"Reduce our churn rate."                       → Skill 11
-"Set up my company's legal structure."         → Skill 12
-```
-
-**Stage-based** — describe where you are and the orchestrator routes you:
-```
+"Help me validate my startup idea."
+"I need to figure out my pricing."
+"Prepare me for fundraising."
+"Plan my product launch."
+"Write a PRD for my product."
+"Help me build a sales process."
+"Define my brand voice."
+"Set up my growth metrics."
+"Help me structure my team and OKRs."
+"I need to understand my burn rate and runway."
+"Reduce our churn rate."
+"Set up my company's legal structure."
 "I've validated my idea and need to prepare for fundraising."
-→ Routes to Skills 02, 03, 05
-
 "We've launched but need to scale our growth."
-→ Routes to Skills 08, 09
 ```
+
+The orchestrator routes each of these to the right skill(s) automatically.
 
 ---
 
