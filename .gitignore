@@ -1,0 +1,17 @@
+# Generated artifacts (root-level only, not skill template artifacts)
+/artifacts/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Session files
+docs/session-learnings.md
+docs/tasks/
