@@ -15,7 +15,7 @@ generated_by: Orchestrator (Skills 01, 02, 03, 05, 08, 09, 10)
 startup: [startup name from intake]
 date: [YYYY-MM-DD generation date]
 version: 1.0
-research_sources: [list of URLs from WebSearch research]
+research_sources: [list of URLs from web search research]
 ---
 ```
 
@@ -162,9 +162,9 @@ research_sources: [list of URLs from WebSearch research]
 |-----------|--------|
 | Initial market signals | Skill 01 (Idea Validation) — search volume, market indicators |
 | Target segment | Skill 02 (Business Model) — best-fit customer definition |
-| Market research | WebSearch research (required for this slide) |
+| Market research | web search research (required for this slide) |
 
-### Required WebSearch Queries
+### Required web search Queries
 ```
 "[industry] market size [current_year]"
 "[industry] total addressable market"
@@ -391,9 +391,9 @@ SOM: $[X]M — [Realistic capture in 3-5 years]
 |-----------|--------|
 | Competitive positioning map | Skill 02 (Business Model) — April Dunford positioning |
 | Unique capabilities | Skill 02 — structural differentiators |
-| Competitor details | WebSearch research (required) |
+| Competitor details | web search research (required) |
 
-### Required WebSearch Queries
+### Required web search Queries
 ```
 "[competitor_name] funding"
 "[competitor_name] pricing"
@@ -417,7 +417,7 @@ SOM: $[X]M — [Realistic capture in 3-5 years]
 2. "[Advantage 2]" — [1 sentence explanation]
 3. "[Advantage 3]" — [1 sentence explanation]]
 
-[Key competitor context — from WebSearch:
+[Key competitor context — from web search:
 "[Competitor A] raised $[X]M and focuses on [segment]. Our differentiation: [specific]."
 "[Competitor B] has [X] reviews on G2 with consistent complaints about [weakness]."]
 ```

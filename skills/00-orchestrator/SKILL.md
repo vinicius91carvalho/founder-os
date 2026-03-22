@@ -542,7 +542,7 @@ Each skill receives only the data it needs from upstream skills. This table defi
 
 ### When to Use Internet Research
 
-Internet research via WebSearch and WebFetch is used to supplement skill outputs with real-world data. It is required for artifact generation and optional during individual skill runs.
+Internet research via web search is used to supplement skill outputs with real-world data. It is required for artifact generation and optional during individual skill runs. Most AI platforms support web search natively (see README for platform-specific details).
 
 | Research Trigger | Required/Optional | Skills Involved |
 |-----------------|-------------------|----------------|
@@ -619,26 +619,26 @@ Organize research queries by Business Plan section. Run these systematically bef
 FUNCTION conduct_research(industry, competitors, jurisdiction):
 
   # Phase 1: Market sizing (3-5 queries)
-  market_data = WebSearch("[industry] market size [year]")
-  market_growth = WebSearch("[industry] growth rate forecast")
-  market_segments = WebSearch("[specific_segment] market size")
+  market_data = search_web("[industry] market size [year]")
+  market_growth = search_web("[industry] growth rate forecast")
+  market_segments = search_web("[specific_segment] market size")
   CROSS_REFERENCE market_data with at least 2 sources
 
   # Phase 2: Competitive landscape (2-4 queries per competitor)
   FOR each competitor in competitors:
-    comp_funding = WebSearch("[competitor] funding round")
-    comp_pricing = WebSearch("[competitor] pricing")
-    comp_reviews = WebSearch("[competitor] reviews users")
-  competitive_landscape = WebSearch("[industry] startup landscape [year]")
+    comp_funding = search_web("[competitor] funding round")
+    comp_pricing = search_web("[competitor] pricing")
+    comp_reviews = search_web("[competitor] reviews users")
+  competitive_landscape = search_web("[industry] startup landscape [year]")
 
   # Phase 3: Financial benchmarks (2-3 queries)
-  benchmarks = WebSearch("[industry] SaaS metrics benchmark")
-  unit_economics = WebSearch("[industry] LTV CAC benchmark")
+  benchmarks = search_web("[industry] SaaS metrics benchmark")
+  unit_economics = search_web("[industry] LTV CAC benchmark")
 
   # Phase 4: Regulatory (if applicable)
   IF industry in regulated_industries:
-    regulations = WebSearch("[industry] regulations [jurisdiction]")
-    compliance = WebSearch("[industry] compliance requirements")
+    regulations = search_web("[industry] regulations [jurisdiction]")
+    compliance = search_web("[industry] compliance requirements")
 
   # Phase 5: Validate and compile
   FOR each data point:
@@ -843,7 +843,7 @@ When resuming in a new session:
 
 - **Why it happens:** Skipping the research step to save time, or trusting the founder's self-reported market knowledge
 - **Why it harms them:** Market size and competitive analysis with invented numbers destroys credibility with investors. "The market is $10 billion" without a citation is a red flag — investors will check, and if the number is wrong, trust is lost
-- **Instead:** Always run WebSearch for market data when generating artifacts. Use the research query templates. Flag when data is unavailable rather than guessing. A gap labeled "data not publicly available" is more credible than a fabricated number
+- **Instead:** Always run web search for market data when generating artifacts. Use the research query templates. Flag when data is unavailable rather than guessing. A gap labeled "data not publicly available" is more credible than a fabricated number
 
 ### 6. Passing Full Context to Every Skill
 
